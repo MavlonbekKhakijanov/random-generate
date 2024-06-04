@@ -1839,10 +1839,6 @@ html {
   width: 100%;
 }
 
-.max-w-xs {
-  max-width: 20rem;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1924,6 +1920,11 @@ html {
      object-fit: cover;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1932,26 +1933,6 @@ html {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .text-center {
@@ -2036,20 +2017,16 @@ html {
     width: 50%;
   }
 
-  .sm\:w-\[30\%\] {
-    width: 30%;
-  }
-
   .sm\:w-\[45\%\] {
     width: 45%;
   }
 
-  .sm\:flex-none {
-    flex: none;
-  }
-
   .sm\:flex-1 {
     flex: 1 1 0%;
+  }
+
+  .sm\:flex-none {
+    flex: none;
   }
 
   .sm\:flex-row {
@@ -2063,11 +2040,6 @@ html {
   .sm\:gap-x-8 {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
-  }
-
-  .sm\:px-14 {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
   }
 
   .sm\:px-10 {
@@ -2093,14 +2065,6 @@ html {
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-\[30\%\] {
-    width: 30%;
-  }
-
-  .md\:flex-1 {
-    flex: 1 1 0%;
   }
 
   .md\:px-20 {

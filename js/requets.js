@@ -1,8 +1,11 @@
-const API = "https://randomuser.me/api/?results=10";
+const API = "https://randomuser.me/api/?results=9";
 
 // o'zgaruvchilar
 const loaderEl = document.querySelector("#loader");
 const navigationBar = document.querySelector("#navigation__bar");
+const headerTitle = document.querySelector("#header__title");
+const inputEl = document.querySelector("#input");
+const buttonBox = document.querySelector("#button__box");
 
 const loadeTog = (toggel) => {
   if (toggel) {
@@ -10,6 +13,9 @@ const loadeTog = (toggel) => {
     loaderEl.classList.remove("hidden");
   } else {
     navigationBar.classList.remove("hidden");
+    headerTitle.classList.remove("hidden");
+    inputEl.classList.remove("hidden");
+    buttonBox.classList.remove("hidden");
     loaderEl.classList.add("hidden");
   }
 };

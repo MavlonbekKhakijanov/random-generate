@@ -64,7 +64,7 @@
         </div>
       </div>
     </div>
-    <div class="h-[110px] w-full bg-base-content">
+    <div class="h-[110px] w-full bg-base-content hidden" id="header__title">
       <h1
         class="flex items-center justify-center h-full text-gray-300 text-3xl font-bold tracking-wider"
       >
@@ -78,14 +78,19 @@
       >
         <div class="w-full sm:flex-1">
           <input
+            id="input"
             type="text "
             class="input input-bordered w-full"
             placeholder="Search... "
           />
         </div>
-        <div class="flex gap-2 mt-2 sm:mt-0">
-          <button class="btn btn-outline flex-1 sm:flex-none">refresh</button>
-          <button class="btn btn-outline flex-1 sm:flex-none">clear</button>
+        <div class="flex gap-2 mt-2 sm:mt-0 hidden" id="button__box">
+          <button id="refresh__btn" class="btn btn-outline flex-1 sm:flex-none">
+            refresh
+          </button>
+          <button id="clear__btn" class="btn btn-outline flex-1 sm:flex-none">
+            clear
+          </button>
         </div>
       </div>
 
@@ -100,95 +105,43 @@
 
       <div class="mt-6">
         <ul
+          id="user"
           class="flex items-center justify-center sm:justify-between gap-4 sm:gap-x-8 flex-wrap"
         >
-          <li
-            class="flex flex-col border border-base-content gap-y-4 w-full sm:w-[45%] md:sm:w-[30%] items-center px-6 py-3"
-          >
-            <div class="rounded-full w-[150px] h-[150px] overflow-hidden">
-              <img
-                src="./Fotolia_63579279_Subscription_Monthly_M.jpg"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div class="w-full flex flex-col gap-y-2 text-center sm:text-left">
-              <h5>
-                <i class="fa-regular fa-circle-user"></i> -
-                <span id="name">Mr Mavlon Khaqijanov</span>
-              </h5>
-              <p>
-                <i class="fa-solid fa-cake-candles"></i
-                ><span id="age"> - 21 yosh</span>
-              </p>
-              <p>
-                <i class="fa-solid fa-map-pin"></i>
-                <span id="location">- Uzbekistan Fergana</span>
-              </p>
-              <p>
-                <i class="fa-solid fa-venus-mars"></i>
-                <span id="gender">- erkak</span>
-              </p>
-            </div>
-          </li>
-          <li
-            class="flex flex-col border border-base-content gap-y-4 w-full sm:w-[45%] md:sm:w-[30%] items-center px-6 py-3"
-          >
-            <div class="rounded-full w-[150px] h-[150px] overflow-hidden">
-              <img
-                src="./Fotolia_63579279_Subscription_Monthly_M.jpg"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div class="w-full flex flex-col gap-y-2 text-center sm:text-left">
-              <h5>
-                <i class="fa-regular fa-circle-user"></i> -
-                <span id="name">Mr Mavlon Khaqijanov</span>
-              </h5>
-              <p>
-                <i class="fa-solid fa-cake-candles"></i
-                ><span id="age"> - 21 yosh</span>
-              </p>
-              <p>
-                <i class="fa-solid fa-map-pin"></i>
-                <span id="location">- Uzbekistan Fergana</span>
-              </p>
-              <p>
-                <i class="fa-solid fa-venus-mars"></i>
-                <span id="gender">- erkak</span>
-              </p>
-            </div>
-          </li>
-          <li
-            class="flex flex-col border border-base-content gap-y-4 w-full sm:w-[45%] md:w-[30%] items-center px-6 py-3"
-          >
-            <div class="rounded-full w-[150px] h-[150px] overflow-hidden">
-              <img
-                src="./Fotolia_63579279_Subscription_Monthly_M.jpg"
-                alt=""
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div class="w-full flex flex-col gap-y-2 text-center sm:text-left">
-              <h5>
-                <i class="fa-regular fa-circle-user"></i> -
-                <span id="name">Mr Mavlon Khaqijanov</span>
-              </h5>
-              <p>
-                <i class="fa-solid fa-cake-candles"></i
-                ><span id="age"> - 21 yosh</span>
-              </p>
-              <p>
-                <i class="fa-solid fa-map-pin"></i>
-                <span id="location">- Uzbekistan Fergana</span>
-              </p>
-              <p>
-                <i class="fa-solid fa-venus-mars"></i>
-                <span id="gender">- erkak</span>
-              </p>
-            </div>
-          </li>
+          <template>
+            <li
+              class="flex flex-col border border-base-content gap-y-4 w-full sm:w-[45%] md:sm:w-[30%] items-center px-6 py-3"
+            >
+              <div class="rounded-full w-[150px] h-[150px] overflow-hidden">
+                <img
+                  id="img"
+                  src="./Fotolia_63579279_Subscription_Monthly_M.jpg"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div
+                class="w-full flex flex-col gap-y-2 text-center sm:text-left"
+              >
+                <h5>
+                  <i class="fa-regular fa-circle-user"></i> -
+                  <span id="name" class="user__name">Mr Mavlon Khaqijanov</span>
+                </h5>
+                <p>
+                  <i class="fa-solid fa-cake-candles"></i
+                  ><span id="age"> - 21 yosh</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-map-pin"></i>
+                  <span id="location">- Uzbekistan Fergana</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-venus-mars"></i>
+                  <span id="gender">- erkak</span>
+                </p>
+              </div>
+            </li>
+          </template>
         </ul>
       </div>
     </div>
